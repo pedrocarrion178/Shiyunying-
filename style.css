@@ -1,0 +1,25 @@
+
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    padding: 0;
+}
+.input-section, .grid-section, .interpretation-section {
+    margin-bottom: 20px;
+}
+.grid-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.grid-section .palace {
+    border: 1px solid #333;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+.interpretation-section {
+    border: 1px solid #aaa;
+    padding: 10px;
+    min-height: 100px;
+}

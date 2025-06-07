@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8" />
+    <title>奇门遁甲在线排盘</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="qimen-core.js"></script>
+    <script src="main.js" defer></script>
+</head>
+<body>
+
+<h1>奇门遁甲在线排盘</h1>
+
+<div class="input-section">
+    <label>出生年: <input type="number" id="year" value="1988"></label>
+    <label>月: <input type="number" id="month" value="3"></label>
+    <label>日: <input type="number" id="day" value="7"></label>
+    <label>时辰:
+        <select id="hour">
+            <option value="子时">子时</option>
+            <option value="丑时">丑时</option>
+            <option value="寅时">寅时</option>
+            <option value="卯时">卯时</option>
+            <option value="辰时">辰时</option>
+            <option value="巳时">巳时</option>
+            <option value="午时">午时</option>
+            <option value="未时">未时</option>
+            <option value="申时">申时</option>
+            <option value="酉时">酉时</option>
+            <option value="戌时">戌时</option>
+            <option value="亥时">亥时</option>
+        </select>
+    </label>
+    <label>阴阳遁:
+        <select id="dunType">
+            <option value="yang">阳遁</option>
+            <option value="yin">阴遁</option>
+        </select>
+    </label>
+    <button onclick="generateChart()">生成奇门盘</button>
+</div>
+
+<div class="grid-section" id="palaceGrid">
+    <!-- 九宫格宫位展示区，动态填充 -->
+</div>
+
+<div class="interpretation-section" id="interpretation">
+    <p>请输入信息并点击生成奇门盘。</p>
+</div>
+
+</body>
+</html>
